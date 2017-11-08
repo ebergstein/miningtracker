@@ -246,13 +246,17 @@ class Ui_MainWindow(object):
         self.label_7 = QLabel(self.centralwidget)
         font = QFont()
         font.setFamily("Calibri")
-        font.setPointSize(16)
+        #size is smaller to fit the money being made into the window
+        font.setPointSize(12)
         self.label_7.setFont(font)
         self.label_7.setLayoutDirection(Qt.LeftToRight)
         self.label_7.setAlignment(Qt.AlignCenter)
         self.label_7.setObjectName("label_7")
         self.label_7.setText("Money being made: \n" + str(self.money) + " " + str(self.currency) + "/h")
         self.verticalLayout_5.addWidget(self.label_7)
+        font = QFont()
+        font.setFamily("Calibri")
+        font.setPointSize(16)
         self.comboBox_3 = QComboBox(self.centralwidget)
         self.comboBox_3.setObjectName("comboBox_3")
         self.comboBox_3.addItem("usd")
@@ -297,6 +301,7 @@ class Ui_MainWindow(object):
         self.label_8.setText("Input your hash rate.")
         self.verticalLayout_6.addWidget(self.label_8)
         self.lineEdit = QLineEdit(self.centralwidget)
+        #Constrains the text box's length to the current size of the window
         sizePolicy = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -406,6 +411,7 @@ class Ui_MainWindow(object):
     def getPowerPeriod(self):
         return self.power_time
 
+    #Changes the source that is being mined
     def updateMining(self, source):
         if source == "Bitcoin":
             self.mining = "btc"
@@ -419,10 +425,12 @@ class Ui_MainWindow(object):
     def getMining(self):
         return self.mining
 
+    #Updates the Hash rate
     def updateHashing(self, rate):
         if re.match("^[0-9\.]*$", rate):
             self.hashing = rate
 
+    #Updates the power bill
     def updateCost(self, rate):
         if re.match("^[0-9\.]*$", rate):
             self.cost = rate
@@ -433,12 +441,14 @@ class Ui_MainWindow(object):
     def getHashing(self):
         return self.hashing
 
+    #updates the currency that the money being made is displayed in
     def updateCurrency(self, currency):
         self.currency = currency
 
     def getCurrency(self):
         return self.currency
 
+    #updates the money being made
     def updateMoney(self, money):
         self.money = float(money)
         temp = self.money
@@ -559,11 +569,14 @@ if __name__ == "__main__":
     hashing = "4730"
     powerdraw = "1293"
     cost = "0.12"
+    #Using webscraping again for money calculations because I was unable to find any formulas to calculate money being
+    #made per hour mining
     calcsite = "https://www.cryptocompare.com/mining/calculator/" + currency + "?HashingPower=" + hashing + \
                "&HashingUnit=GH%2Fs&PowerConsumption=" + powerdraw + "&CostPerkWh=" + cost
     calcrequest = render(app, calcsite)
     calcsoup = BeautifulSoup(calcrequest, "html.parser")
     calcvalues = calcsoup.find("div", attrs={"class": "calculator-container"}).find_all("div", attrs={"class": "calculator-value ng-binding"})
+    #money being made per hour
     calcvalue = calcvalues[0].get_text(" ", strip=True).split()
     #Creates the window
     MainWindow = QMainWindow()
