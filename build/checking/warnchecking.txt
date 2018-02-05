@@ -1,14 +1,13 @@
 missing module named 'multiprocessing.forking' - imported by c:\users\ezra-pc\documents\venvironments\venv\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_multiprocessing.py
 missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
 missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
-missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
 missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
 missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
 missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
 missing module named resource - imported by posix, test.support, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named posix - imported by os, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
-missing module named org - imported by pickle, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named readline - imported by cmd, code, pdb, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 excluded module named _frozen_importlib - imported by importlib, importlib.abc, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
@@ -19,8 +18,9 @@ missing module named 'java.lang' - imported by platform, C:\Users\Ezra-PC\Docume
 missing module named vms_lib - imported by platform, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named termios - imported by tty, getpass, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named grp - imported by shutil, tarfile, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
-missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, netrc, getpass, distutils.util, psutil, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named _dummy_threading - imported by dummy_threading, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, netrc, getpass, distutils.util, psutil, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
+missing module named org - imported by pickle, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py
 missing module named 'org.python' - imported by copy, C:\Users\Ezra-PC\Documents\Tracking Project\checking.py, xml.sax
 missing module named iconv_codec - imported by bs4.dammit
 missing module named chardet - imported by bs4.dammit
@@ -35,11 +35,11 @@ missing module named psutil._psutil_bsd - imported by psutil, psutil._psbsd
 missing module named psutil._psutil_osx - imported by psutil, psutil._psosx
 missing module named _psutil_linux - imported by psutil
 missing module named psutil._psutil_posix - imported by psutil, psutil._pslinux, psutil._psosx, psutil._psbsd, psutil._pssunos, psutil._psaix
+missing module named _yaml - imported by yaml.cyaml
 missing module named __builtin__ - imported by future.utils, future.builtins.misc
 missing module named future_builtins - imported by future.builtins.misc
 missing module named dummy_thread - imported by future.backports.misc
 missing module named thread - imported by future.backports.misc
-missing module named _yaml - imported by yaml.cyaml
 missing module named _dbm - imported by dbm.ndbm
 missing module named gdbm - imported by anydbm, future.moves.dbm.gnu
 missing module named _gdbm - imported by dbm.gnu

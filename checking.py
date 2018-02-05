@@ -14,6 +14,7 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtGui import QFont, QPalette, QLinearGradient, QColor, QBrush
 from PyQt5.Qt import Qt
 from bs4 import BeautifulSoup
+from file_read_backwards import FileReadBackwards
 
 
 #Keeps track of power usage
@@ -170,7 +171,7 @@ class Ui_MainWindow(object):
         self.label_2.setLayoutDirection(Qt.LeftToRight)
         self.label_2.setAlignment(Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
-        self.label_2.setText("Power Usage: 1293w\nPower usage from the past hour: 25000w")
+        self.label_2.setText("GPU Usage:")
         self.verticalLayout_2.addWidget(self.label_2)
         self.comboBox_4 = QComboBox(self.centralwidget)
         self.comboBox_4.setObjectName("comboBox_4")
@@ -347,10 +348,11 @@ class Ui_MainWindow(object):
         self.table_source = country
 
     #Updates the CPU Usage text and the usage over a period text
-    def updateText(self, check, text, cpu_period):
+    def updateText(self, check, text, cpu_period, gpu_usage, gpu_number):
         self.label.setText(
             check + "\nCPU Usage from the past " + self.cpu_time.lower() + ": " + str(math.ceil(cpu_period)) + " percent")
         self.label_4.setText(text)
+        self.label_2.setText("Total GPU usage among " + str(gpu_number) + " GPUs: " + str(gpu_usage) + "%")
 
 
     #Updates the currency source for the order
@@ -443,7 +445,24 @@ def start(power):
     #Writes the current update to the top of the file.
     file.write((str(current) + " " + str(total)).rstrip("\r\n") + "\n" + content)
     file.close()
-    return usage
+    file = open("gpu_usage.txt", "a+")
+    file.close()
+    gpuusage = 0.0
+    totalgpus = 0
+    loop = 1
+    for line in FileReadBackwards("gpu_usage.txt", encoding="utf-8"):
+        if "gpu/" in line:
+            split = line.split("gpu/")
+            for gpunumber in split[1:]:
+                gpuusage += float(gpunumber[2:6])
+                if loop == 1:
+                    totalgpus += 1
+                if gpuusage == gpunumber[6]:
+                    loop = 0
+            break
+    if totalgpus == 0:
+        return usage, gpuusage, totalgpus
+    return usage, gpuusage/totalgpus, totalgpus
 
 
 #Creates a time delta based on the current time and the inputted time period.
@@ -528,7 +547,7 @@ if __name__ == "__main__":
     usa_table = get_table("usa", soup)
     eu_table = get_table("eu", soup)
     text = iterate(usa_table, "US Orders:\n")
-    check = start(power)
+    check, gpu, number = start(power)
     currency = "btc"
     hashing = "4730"
     powerdraw = "1293"
@@ -553,11 +572,11 @@ if __name__ == "__main__":
             text = iterate(usa_table, "US Orders:\n")
         else:
             text = iterate(eu_table, "EU Orders:\n")
-        check = start(power)
+        check, gpu_usage, gpu_number = start(power)
         cpu_type = ui.getCPUPeriod()
         cpu_delta = update_time(cpu_type)
         cpu_period_text = update_cpu_period(cpu_delta)
-        ui.updateText(check, text, cpu_period_text)
+        ui.updateText(check, text, cpu_period_text, gpu_usage, gpu_number)
         source = ui.getSource()
         request = render(app, site + source)
         # The request will be none if the user quit.

@@ -252,6 +252,7 @@ imports:
  &#8226;   <a href="#encodings.zlib_codec">encodings.zlib_codec</a>
  &#8226;   <a href="#enum">enum</a>
  &#8226;   <a href="#errno">errno</a>
+ &#8226;   <a href="#file_read_backwards">file_read_backwards</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#gc">gc</a>
@@ -773,6 +774,7 @@ imported by:
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
@@ -2206,9 +2208,12 @@ imported by:
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#reprlib">reprlib</a>
  &#8226;   <a href="#serial">serial</a>
+ &#8226;   <a href="#serial.errors">serial.errors</a>
+ &#8226;   <a href="#serial.hooks">serial.hooks</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -2578,11 +2583,12 @@ imported by:
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#sched">sched</a>
  &#8226;   <a href="#selectors">selectors</a>
- &#8226;   <a href="#serial.hooks">serial.hooks</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
+ &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#ssl">ssl</a>
@@ -3017,6 +3023,8 @@ imports:
 imported by:
     <a href="#future.builtins.newround">future.builtins.newround</a>
  &#8226;   <a href="#iso8601.iso8601">iso8601.iso8601</a>
+ &#8226;   <a href="#serial.model">serial.model</a>
+ &#8226;   <a href="#serial.properties">serial.properties</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
@@ -3076,7 +3084,6 @@ imported by:
 imports:
     <a href="#distutils.ccompiler">distutils.ccompiler</a>
  &#8226;   <a href="#distutils.log">distutils.log</a>
- &#8226;   <a href="#distutils.spawn">distutils.spawn</a>
  &#8226;   <a href="#distutils.sysconfig">distutils.sysconfig</a>
  &#8226;   <a href="#sys">sys</a>
 
@@ -3329,8 +3336,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#distutils">distutils</a>
- &#8226;   <a href="#distutils.ccompiler">distutils.ccompiler</a>
+    <a href="#distutils.ccompiler">distutils.ccompiler</a>
  &#8226;   <a href="#distutils.util">distutils.util</a>
  &#8226;   <a href="#test.support">test.support</a>
 
@@ -6643,6 +6649,60 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="file_read_backwards"></a>
+  <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/site-packages/file_read_backwards/__init__.py" type="text/plain"><tt>file_read_backwards</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#file_read_backwards.file_read_backwards">file_read_backwards.file_read_backwards</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#checking.py">checking.py</a>
+ &#8226;   <a href="#file_read_backwards.buffer_work_space">file_read_backwards.buffer_work_space</a>
+ &#8226;   <a href="#file_read_backwards.file_read_backwards">file_read_backwards.file_read_backwards</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="file_read_backwards.buffer_work_space"></a>
+  <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/site-packages/file_read_backwards/buffer_work_space.py" type="text/plain"><tt>file_read_backwards.buffer_work_space</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#file_read_backwards">file_read_backwards</a>
+ &#8226;   <a href="#os">os</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#file_read_backwards.file_read_backwards">file_read_backwards.file_read_backwards</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="file_read_backwards.file_read_backwards"></a>
+  <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/site-packages/file_read_backwards/file_read_backwards.py" type="text/plain"><tt>file_read_backwards.file_read_backwards</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#file_read_backwards">file_read_backwards</a>
+ &#8226;   <a href="#file_read_backwards.buffer_work_space">file_read_backwards.buffer_work_space</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#weakref">weakref</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#file_read_backwards">file_read_backwards</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="fnmatch"></a>
   <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/fnmatch.py" type="text/plain"><tt>fnmatch</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -6781,6 +6841,7 @@ imported by:
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
@@ -7908,6 +7969,7 @@ imported by:
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
@@ -8173,11 +8235,14 @@ imported by:
  &#8226;   <a href="#future.types.newobject">future.types.newobject</a>
  &#8226;   <a href="#future.types.newstr">future.types.newstr</a>
  &#8226;   <a href="#future.utils.surrogateescape">future.utils.surrogateescape</a>
+ &#8226;   <a href="#serial">serial</a>
+ &#8226;   <a href="#serial.errors">serial.errors</a>
+ &#8226;   <a href="#serial.hooks">serial.hooks</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
- &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
   </div>
 
@@ -8587,6 +8652,7 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
@@ -8903,6 +8969,7 @@ imported by:
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
   </div>
 
@@ -8935,6 +9002,7 @@ imported by:
  &#8226;   <a href="#email.parser">email.parser</a>
  &#8226;   <a href="#encodings.quopri_codec">encodings.quopri_codec</a>
  &#8226;   <a href="#encodings.uu_codec">encodings.uu_codec</a>
+ &#8226;   <a href="#file_read_backwards.file_read_backwards">file_read_backwards.file_read_backwards</a>
  &#8226;   <a href="#future.backports.email.generator">future.backports.email.generator</a>
  &#8226;   <a href="#future.backports.email.iterators">future.backports.email.iterators</a>
  &#8226;   <a href="#future.backports.email.message">future.backports.email.message</a>
@@ -8968,6 +9036,7 @@ imported by:
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#quopri">quopri</a>
  &#8226;   <a href="#serial.model">serial.model</a>
+ &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
@@ -9187,7 +9256,6 @@ imports:
 imported by:
     <a href="#checking.py">checking.py</a>
  &#8226;   <a href="#collections">collections</a>
- &#8226;   <a href="#serial.properties">serial.properties</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
   </div>
@@ -10722,6 +10790,7 @@ imported by:
  &#8226;   <a href="#future.types.newstr">future.types.newstr</a>
  &#8226;   <a href="#future.utils">future.utils</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
+ &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
 
   </div>
@@ -10847,6 +10916,7 @@ imported by:
  &#8226;   <a href="#distutils.util">distutils.util</a>
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#file_read_backwards.buffer_work_space">file_read_backwards.buffer_work_space</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#future.backports.email.utils">future.backports.email.utils</a>
  &#8226;   <a href="#future.backports.http.client">future.backports.http.client</a>
@@ -11183,6 +11253,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psaix">psutil._psaix</a>
  &#8226;   <a href="#psutil._psbsd">psutil._psbsd</a>
  &#8226;   <a href="#psutil._pslinux">psutil._pslinux</a>
@@ -11211,6 +11282,7 @@ imported by:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psaix">psutil._psaix</a>
  &#8226;   <a href="#psutil._psbsd">psutil._psbsd</a>
  &#8226;   <a href="#psutil._pslinux">psutil._pslinux</a>
@@ -11289,6 +11361,29 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="psutil._exceptions"></a>
+  <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/site-packages/psutil/_exceptions.py" type="text/plain"><tt>psutil._exceptions</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#psutil">psutil</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#psutil">psutil</a>
+ &#8226;   <a href="#psutil._psaix">psutil._psaix</a>
+ &#8226;   <a href="#psutil._psbsd">psutil._psbsd</a>
+ &#8226;   <a href="#psutil._pslinux">psutil._pslinux</a>
+ &#8226;   <a href="#psutil._psosx">psutil._psosx</a>
+ &#8226;   <a href="#psutil._psposix">psutil._psposix</a>
+ &#8226;   <a href="#psutil._pssunos">psutil._pssunos</a>
+ &#8226;   <a href="#psutil._pswindows">psutil._pswindows</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="psutil._psaix"></a>
   <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/site-packages/psutil/_psaix.py" type="text/plain"><tt>psutil._psaix</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -11300,6 +11395,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psposix">psutil._psposix</a>
  &#8226;   <a href="#psutil._psutil_aix">psutil._psutil_aix</a>
  &#8226;   <a href="#psutil._psutil_posix">psutil._psutil_posix</a>
@@ -11330,6 +11426,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psposix">psutil._psposix</a>
  &#8226;   <a href="#psutil._psutil_bsd">psutil._psutil_bsd</a>
  &#8226;   <a href="#psutil._psutil_posix">psutil._psutil_posix</a>
@@ -11361,6 +11458,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psposix">psutil._psposix</a>
  &#8226;   <a href="#psutil._psutil_posix">psutil._psutil_posix</a>
  &#8226;   <a href="#re">re</a>
@@ -11391,6 +11489,7 @@ imports:
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psposix">psutil._psposix</a>
  &#8226;   <a href="#psutil._psutil_osx">psutil._psutil_osx</a>
  &#8226;   <a href="#psutil._psutil_posix">psutil._psutil_posix</a>
@@ -11416,6 +11515,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#time">time</a>
 
@@ -11444,6 +11544,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psposix">psutil._psposix</a>
  &#8226;   <a href="#psutil._psutil_posix">psutil._psutil_posix</a>
  &#8226;   <a href="#psutil._psutil_sunos">psutil._psutil_sunos</a>
@@ -11554,6 +11655,7 @@ imports:
  &#8226;   <a href="#psutil">psutil</a>
  &#8226;   <a href="#psutil._common">psutil._common</a>
  &#8226;   <a href="#psutil._compat">psutil._compat</a>
+ &#8226;   <a href="#psutil._exceptions">psutil._exceptions</a>
  &#8226;   <a href="#psutil._psutil_windows">psutil._psutil_windows</a>
  &#8226;   <a href="#sys">sys</a>
 
@@ -11773,6 +11875,7 @@ imported by:
  &#8226;   <a href="#future.backports.email.utils">future.backports.email.utils</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#tempfile">tempfile</a>
 
   </div>
@@ -11870,7 +11973,7 @@ imported by:
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
- &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#smtplib">smtplib</a>
@@ -12040,12 +12143,14 @@ imports:
  &#8226;   <a href="#builtins">builtins</a>
  &#8226;   <a href="#future">future</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
+ &#8226;   <a href="#future.utils">future.utils</a>
  &#8226;   <a href="#serial">serial</a>
  &#8226;   <a href="#serial.errors">serial.errors</a>
  &#8226;   <a href="#serial.hooks">serial.hooks</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
@@ -12059,6 +12164,7 @@ imported by:
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
@@ -12072,8 +12178,10 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#__future__">__future__</a>
+ &#8226;   <a href="#builtins">builtins</a>
  &#8226;   <a href="#future">future</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
+ &#8226;   <a href="#future.utils">future.utils</a>
  &#8226;   <a href="#serial">serial</a>
  &#8226;   <a href="#typing">typing</a>
 
@@ -12081,6 +12189,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#serial">serial</a>
+ &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
   </div>
 
@@ -12092,12 +12201,14 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#__future__">__future__</a>
- &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#builtins">builtins</a>
  &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#future">future</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
+ &#8226;   <a href="#future.utils">future.utils</a>
  &#8226;   <a href="#serial">serial</a>
  &#8226;   <a href="#serial.model">serial.model</a>
+ &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#typing">typing</a>
 
   </div>
@@ -12149,16 +12260,23 @@ imports:
  &#8226;   <a href="#builtins">builtins</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#decimal">decimal</a>
  &#8226;   <a href="#future">future</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
  &#8226;   <a href="#future.utils">future.utils</a>
+ &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
  &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#numbers">numbers</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#serial">serial</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
+ &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#urllib.response">urllib.response</a>
  &#8226;   <a href="#yaml">yaml</a>
 
   </div>
@@ -12183,17 +12301,43 @@ imports:
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#decimal">decimal</a>
  &#8226;   <a href="#future">future</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
  &#8226;   <a href="#future.utils">future.utils</a>
  &#8226;   <a href="#iso8601">iso8601</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#keyword">keyword</a>
  &#8226;   <a href="#numbers">numbers</a>
- &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#serial">serial</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#serial">serial</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="serial.request"></a>
+  <a target="code" href="///C:/users/ezra-pc/documents/venvironments/venv/lib/site-packages/serial/request.py" type="text/plain"><tt>serial.request</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#builtins">builtins</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#future">future</a>
+ &#8226;   <a href="#future.standard_library">future.standard_library</a>
+ &#8226;   <a href="#future.utils">future.utils</a>
+ &#8226;   <a href="#random">random</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#serial">serial</a>
+ &#8226;   <a href="#string">string</a>
+ &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#urllib">urllib</a>
 
   </div>
   <div class="import">
@@ -12222,6 +12366,7 @@ imports:
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.utilities">serial.utilities</a>
  &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#warnings">warnings</a>
 
   </div>
   <div class="import">
@@ -12239,19 +12384,24 @@ imported by:
 imports:
     <a href="#__future__">__future__</a>
  &#8226;   <a href="#builtins">builtins</a>
+ &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#future">future</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
- &#8226;   <a href="#future.utils">future.utils</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#keyword">keyword</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#serial">serial</a>
+ &#8226;   <a href="#serial.errors">serial.errors</a>
+ &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#unicodedata">unicodedata</a>
 
   </div>
   <div class="import">
 imported by:
     <a href="#serial">serial</a>
+ &#8226;   <a href="#serial.hooks">serial.hooks</a>
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
@@ -12627,6 +12777,7 @@ imported by:
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -12849,6 +13000,7 @@ imported by:
  &#8226;   <a href="#quopri">quopri</a>
  &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#selectors">selectors</a>
+ &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#smtplib">smtplib</a>
@@ -13490,7 +13642,9 @@ imported by:
  &#8226;   <a href="#serial.meta">serial.meta</a>
  &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#serial.properties">serial.properties</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#serial.test">serial.test</a>
+ &#8226;   <a href="#serial.utilities">serial.utilities</a>
 
   </div>
 
@@ -13751,6 +13905,7 @@ imported by:
     <a href="#checking.py">checking.py</a>
  &#8226;   <a href="#email._header_value_parser">email._header_value_parser</a>
  &#8226;   <a href="#future.standard_library">future.standard_library</a>
+ &#8226;   <a href="#serial.request">serial.request</a>
  &#8226;   <a href="#urllib.error">urllib.error</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
@@ -13800,6 +13955,7 @@ imported by:
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#test.support">test.support</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
@@ -13850,6 +14006,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#serial.model">serial.model</a>
  &#8226;   <a href="#test.support">test.support</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
 
@@ -13868,7 +14025,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#urllib.error">urllib.error</a>
+    <a href="#serial.model">serial.model</a>
+ &#8226;   <a href="#urllib.error">urllib.error</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -13963,6 +14121,7 @@ imported by:
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#runpy">runpy</a>
+ &#8226;   <a href="#serial.test">serial.test</a>
  &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#ssl">ssl</a>
@@ -14003,6 +14162,7 @@ imported by:
     <a href="#_threading_local">_threading_local</a>
  &#8226;   <a href="#checking.py">checking.py</a>
  &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#file_read_backwards.file_read_backwards">file_read_backwards.file_read_backwards</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
